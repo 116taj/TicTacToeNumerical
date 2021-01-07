@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?><!--Holds background-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settingsbg">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/themes" />
+        <!--radio buttons for themes, so they cannot be double selected-->
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="normal"
+                android:text="Overworld"
+                android:textAppearance="?android:textAppearanceButton" />
+
+            <RadioButton
+                android:id="@+id/nether"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="nether"
+                android:text="Nether"
+                android:textAppearance="?android:textAppearanceButton" />
+
+            <RadioButton
+                android:id="@+id/end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="end"
+                android:text="End"
+                android:textAppearance="?android:textAppearanceButton" />
+
+            <RadioButton
+                android:id="@+id/locked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="LOCKED"
+                android:textAppearance="?android:textAppearanceButton"
+                android:visibility="gone" />
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/modes" />
+        <!--checkboxes for modes, can be double selected but i like them and issue is handled-->
+        <CheckBox
+            android:id="@+id/aicheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="aiclick"
+            android:text="AI"
+            android:textAppearance="?android:textAppearanceButton" />
+
+        <CheckBox
+            android:id="@+id/replacecheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="replaceclick"
+            android:text="Replace"
+            android:textAppearance="?android:textAppearanceButton" />
+
+        <CheckBox
+            android:id="@+id/lockcheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="LOCKED"
+            android:textAppearance="?android:textAppearanceButton"
+            android:visibility="gone" />
+        <!--buttons: back, settings help, skill testing question-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="180dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="back"
+                android:padding="5dp"
+                android:src="@drawable/back" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="help"
+                android:padding="5dp"
+                android:src="@drawable/help" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="skill"
+                android:padding="5dp"
+                android:src="@drawable/skill" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

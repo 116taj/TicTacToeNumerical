@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?><!--NO COMMENTS, SAME AS FIRST EXCEPT drawable for themes-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/titlebgend">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="80dp"
+            android:padding="10dp"
+            android:src="@drawable/title" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="gamescreen"
+            android:padding="10dp"
+            android:src="@drawable/play" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="instructscreen"
+            android:padding="10dp"
+            android:src="@drawable/instruct" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="settingscreen"
+            android:padding="10dp"
+            android:src="@drawable/settings" />
+    </LinearLayout>
+</RelativeLayout>
